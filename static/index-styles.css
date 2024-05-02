@@ -1,12 +1,12 @@
 body {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   margin: 0;
   padding: 0;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
+  background-color:#232b2b;
   
 }
 
@@ -24,7 +24,11 @@ body {
 
 
 h1{
-  color: black;
+  color: white;
+}
+
+h3{
+  color: white;
 }
 
 a {
@@ -58,7 +62,7 @@ a {
     border-color: transparent;
   }
   50% {
-    border-color: black;
+    border-color: white;
   }
 }
 
@@ -85,17 +89,21 @@ a {
 
 /* Styles for the menu */
 .menu {
-  position: absolute;
+  position: fixed;
   top: 20px;
-  right: 20px;
+  left: 50%; /* Adjusted to center horizontally */
+  transform: translateX(-50%); /* Center horizontally */
+  text-align: center; /* Center the text inside */
+  z-index: 999; /* Ensure menu stays on top */
 }
 
 .menu a {
   text-decoration: none;
-  color: #333;
-  margin-left: 20px;
+  color: white;
+  margin: 0 20px; /* Adjust spacing between buttons */
 }
 
 .menu a:hover {
-  color: #000; /* Change color on hover if needed */
+  color: white; /* Change color on hover if needed */
+  text-decoration-line: underline;
 }
