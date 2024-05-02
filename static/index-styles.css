@@ -26,6 +26,11 @@ body {
 h1{
   color: black;
 }
+
+a {
+  text-decoration: none; /* Gets rid of dirty default underline */
+}
+
 .typewriter {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .05em solid black; /* Adjust border width */
@@ -56,6 +61,26 @@ h1{
     border-color: black;
   }
 }
+
+/* Additional styles for the footer */
+.social {
+  position: fixed;
+  margin-bottom: 20px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+
+.social img {
+  width: 24px; /* Adjust width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin: 0 10px; /* Add margin between images */
+ 
+  cursor: pointer;
+}
+ 
 
 
 /* Styles for the menu */
